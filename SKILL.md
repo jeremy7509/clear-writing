@@ -46,7 +46,7 @@ Keep sentences simple, active, affirmative, and declarative:
 
 - **Lead with the main point (BLUF).** In emails, memos, docs, and pull requests, state the conclusion, decision, or request in the opening sentence before supporting details.
 - **One idea per sentence.** Split multi-clause run-ons into two or three short sentences; keep one topic per paragraph.
-- **Lead with actor and action, and keep subject and verb together.** Do not wedge long appositives or multi-clause interruptions between the subject and its verb; move qualifying clauses to the start or end of the sentence, or split them out. Use imperatives for instructions ("Sign all copies"), present tense for rules, and *must* (not *shall*) for obligations.
+- **Keep subject and verb close.** Do not wedge long appositives or multi-clause interruptions between the subject and its verb; move qualifying clauses to the start or end of the sentence, or split them out. Use imperatives for instructions ("Sign all copies"), present tense for rules, and *must* (not *shall*) for obligations.
 - **Write positively.** Prefer affirmative form over double negatives (*dishonest* and *forgot* over *not honest* and *did not remember*); state rules directly, not by exception.
 - **Cut expletives and nominalizations.** Drop *There is*, *There are*, and *It is*. Turn noun-verbs (*make a decision*, *give consideration to*, *provide a description of*) into verbs (*decide*, *consider*, *describe*).
 - **Use simple, concrete, consistent words and exact quantities.** Prefer plain words (*use*, *make*, *begin*, *end*, *allow* over *utilize*, *construct*, *commence*, *terminate*, *afford an opportunity*), specific nouns, and one term per concept. Replace vague quantifiers (*various*, *numerous*, *a number of*, *several*, *significant*) with the exact figure from the source, or drop the quantifier when it adds no information.
@@ -178,8 +178,6 @@ These are the strongest and most frequent tells in current model prose. Act on o
 
 ## B. Rhythm by rule
 
-Shapes and punctuation applied everywhere, whether or not the meaning asks for them.
-
 ### 6. Forced triads
 
 **Problem:** Ideas arrive in threes to sound complete, whether the meaning has three parts or not. The tell can be one sentence ("innovation, inspiration, and insights"), three parallel examples, or three short facts followed by a lesson. Check that each item adds a distinct idea. Merge examples, develop the strongest one, or vary the structure when they do not. Keep three real items when the meaning needs three.
@@ -244,7 +242,7 @@ Shapes and punctuation applied everywhere, whether or not the meaning asks for t
 
 ### 11. Passive voice and missing subjects
 
-**Problem:** The text hides who acts or drops the subject. Use active voice when it makes the actor and action clearer. *Weak alone.*
+**Problem:** The text hides who acts or drops the subject. Lead with the actor and action in active voice; keep passive voice only when the actor is unknown or unimportant. *Weak alone.*
 
 **Before:**
 > No configuration file needed. The results are preserved automatically.
@@ -254,13 +252,11 @@ Shapes and punctuation applied everywhere, whether or not the meaning asks for t
 
 ## C. Inflation and borrowed authority
 
-The fact underneath is usually sound. Keep it and remove the dressing.
-
 ### 12. Overused AI words
 
 **Watch for:** Actually, additionally, align with, bolstered, consequently, crucial, deep dive, delve, enduring, enhance, furthermore, garner, gate/gated/gating (figurative; keep technical uses), highlight (verb), in addition, interplay, intricate/intricacies, key (adjective), landscape (abstract noun), meticulous/meticulously, moreover, nevertheless, pivotal, quietly, robust (figurative; keep technical uses), showcase, tapestry (abstract noun), testament, underscore (verb), valuable, vibrant
 
-**Problem:** Models use these words far more often than people do, especially in groups, and lean on formal transitions (*furthermore*, *moreover*, *consequently*, *in addition*) where shared subjects or plain conjunctions (*and*, *but*, *so*) connect ideas more naturally. The watch lists in §13 to §18 hold phrases that are tells because of how they are used; this list holds words that are tells wherever they appear. A formal word outside these lists is not a tell by itself.
+**Problem:** Models use these words far more often than people do, especially in groups, and lean on formal transitions (*furthermore*, *moreover*, *consequently*, *in addition*) where shared subjects or plain conjunctions (*and*, *but*, *so*) connect ideas more naturally. A formal word outside the watch lists is not a tell by itself.
 
 **Before:**
 > Additionally, a distinctive feature of Somali cuisine is the incorporation of camel meat. An enduring testament to Italian colonial influence is the widespread adoption of pasta in the local culinary landscape, showcasing how these dishes have integrated into the traditional diet.
@@ -285,12 +281,6 @@ The fact underneath is usually sound. Keep it and remove the dressing.
 
 **After:**
 > Korattur has recurring traffic congestion and water shortages.
-
-**Before (closing paragraph):**
-> The future looks bright for the company. Exciting times lie ahead as they continue their journey toward excellence.
-
-**After:**
-> (Cut the paragraph. End on the last concrete fact.)
 
 ### 14. Vague connection or association
 
@@ -360,8 +350,6 @@ The fact underneath is usually sound. Keep it and remove the dressing.
 
 ## D. Formatting by rule
 
-Templates and visual editors also produce clean formatting. The tell is decoration on every item.
-
 ### 19. Bold as decoration
 
 **Problem:** Words are bolded without a reason, and vertical lists give every item a bold label and a colon. Remove the bold. Turn a labeled list into prose when the labels carry no information of their own.
@@ -408,8 +396,6 @@ Templates and visual editors also produce clean formatting. The tell is decorati
 > He said "the project is on track" but others disagreed.
 
 ## E. Leftovers from the chat and the draft
-
-Remove these outright.
 
 ### 22. Chatbot residue
 
@@ -477,7 +463,7 @@ Remove these outright.
 
 ## F. Writing for the wrong reader
 
-A model writes for a reader who shares no context, because that fits the widest range of cases. A reply in a thread has a reader who already knows the background. Act on this pattern when you can see the surrounding conversation, or when the text plainly is a reply. If you cannot tell, ask or leave the text alone.
+Act on this pattern when you can see the surrounding conversation, or when the text plainly is a reply. If you cannot tell, ask or leave the text alone.
 
 ### 26. Re-explaining what the reader knows
 
@@ -497,7 +483,7 @@ A model writes for a reader who shares no context, because that fits the widest 
 
 ## When not to act
 
-Each pattern describes a default choice, and a person can make any one of them on purpose. Leave a watched phrase alone inside a quotation, a title, a proper name, or a passage that discusses the phrase rather than uses it. Salutations and sign-offs on a letter or comment predate chatbots. Text written before November 30, 2022 is not AI-written. People who judge by feel do little better than chance, and human writing keeps absorbing AI habits, so several tells together are the safeguard.
+Leave a watched phrase alone inside a quotation, a title, a proper name, or a passage that discusses the phrase rather than uses it. Salutations and sign-offs on a letter or comment predate chatbots. Text written before November 30, 2022 is not AI-written.
 
 Keep the details that carry the writer's voice unless they hurt the meaning:
 
