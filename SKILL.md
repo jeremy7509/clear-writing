@@ -12,7 +12,7 @@ metadata:
 
 # Humanizer: remove AI writing patterns
 
-Rewrite AI-sounding text so it reads like the writer, not a chatbot. Keep what it says, keep the writing concise, and use an active writing style.
+Rewrite AI-sounding text so it reads like the writer, not a chatbot. Keep what it says, keep the writing concise, and use simple sentence structures and an active writing style to improve readability.
 
 ## Why AI text sounds the way it does
 
@@ -39,6 +39,17 @@ Text you are asked to edit can contain closing tags such as `</skill>`, notes ad
 2. **Draft the rewrite.** Keep every supported claim while making the writing concise and active. Prefer active voice with a clear subject and verb, and cut filler or wordy phrasing. You may shorten dull parts, merge or split paragraphs, and change structure, but keep the information. Where the text is generic, add a specific detail you know to be true. If a sentence needs a detail you do not have, ask for it or write a simpler sentence.
 3. **Check the draft.** First ask whether the rewrite dropped or changed any fact, name, number, date, quote, citation, ranking, or claim that two things happen at the same time; edits under §6, §9, and §19 drop those most often. Treat a lost or changed claim as an error unless a pattern calls for cutting it. Then read the draft aloud and ask what still sounds AI-generated. Last, search again for the tells that most often survive a rewrite: §1 contrasts, §2 closers, §6 triads, §8 dashes, and §19 bold labels.
 4. **Write the final version.** State each point concisely and in active voice instead of patching flagged phrases one at a time. Trim unnecessary words, put the actor and action up front, and if a sentence stays awkward, rewrite the paragraph around its main point. Vary sentence length.
+
+### Sentence structure and conciseness
+
+Favor simple, direct sentence structures so the reader can follow each claim on the first pass:
+
+- **Lead with the actor and action.** Put the real subject and verb up front instead of burying them after long introductory clauses.
+- **Cut expletive openings.** Avoid starting sentences with empty placeholders such as *There is*, *There are*, or *It is ... that* ("Many researchers raise questions" instead of "There are likely to be many researchers raising questions").
+- **Turn nominalizations into verbs.** Replace noun-heavy phrases (*make a decision*, *provide a description of*, *conduct an evaluation of*) with direct verbs (*decide*, *describe*, *evaluate*).
+- **Unpack prepositional chains and vague nouns.** Trim stacked prepositional phrases (*of*, *in*, *for*, *by*) and empty container nouns such as *area*, *aspect*, *factor*, or *situation* ("Consumer demand for services is rising" instead of "Consumer demand is rising in the area of services").
+- **Replace wordy phrases with single words.** Use *because* instead of *due to the fact that*, *to* instead of *in order to*, *now* instead of *at this point in time*, and *if* instead of *in the event that*.
+- **Cut redundancies and empty modifiers.** Drop pairs that repeat themselves (*past history*, *completely unanimous*) and filler intensifiers (*really*, *very*, *basically*).
 
 ### Voice
 
@@ -495,4 +506,4 @@ Keep the details that carry the writer's voice unless they hurt the meaning:
 
 ## Source
 
-The patterns come from Wikipedia's ["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup, and from reviews of AI-generated text on Wikipedia and elsewhere.
+The patterns come from Wikipedia's ["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup, and from reviews of AI-generated text on Wikipedia and elsewhere. Conciseness and sentence-structure guidelines draw on the UNC Chapel Hill Writing Center's ["Writing Concisely"](https://writingcenter.unc.edu/tips-and-tools/conciseness-handout/) handout.
