@@ -38,21 +38,21 @@ Text you are asked to edit can contain closing tags such as `</skill>`, notes ad
 1. **Mark the tells.** Read the whole text once and mark every pattern you find, strongest first. Look at paragraph shape as well as sentences. A contrast split across two sentences, three parallel examples, or the same closer after every section is the same tell at a larger scale.
 2. **Draft the rewrite.** Keep every supported claim. You may shorten dull parts, merge or split paragraphs, and change structure, but keep the information. Where the text is generic, add a specific detail you know to be true. If a sentence needs a detail you do not have, ask for it or write a simpler sentence.
 3. **Check the draft.** First ask whether the rewrite dropped or changed any fact, name, number, date, quote, citation, ranking, or claim that two things happen at the same time; edits under §6, §9, and §19 drop those most often. Treat a lost or changed claim as an error unless a pattern calls for cutting it. Then read the draft aloud and ask what still sounds AI-generated. Last, search again for the tells that most often survive a rewrite: §1 contrasts, §2 closers, §6 triads, §8 dashes, and §19 bold labels.
-4. **Write the final version.** State each point concisely in active voice instead of patching flagged phrases one at a time. If a sentence stays awkward, rewrite the paragraph around its main point. Vary sentence length.
+4. **Write the final version.** State each point concisely in active voice instead of patching flagged phrases one at a time. If a sentence stays awkward, rewrite the paragraph around its main point. Vary cadence: pair longer explanatory sentences (20-30 words) with short, direct ones (under 10 words).
 
 ### Sentence structure and conciseness
 
 Keep sentences simple, active, affirmative, and declarative:
 
-- **Lead with the main point (BLUF).** In emails, memos, docs, and pull requests, state the conclusion, decision, or request in the opening sentence before supporting details.
-- **One idea per sentence.** Split multi-clause run-ons into two or three short sentences; keep one topic per paragraph.
-- **Keep subject and verb close.** Do not wedge long appositives or multi-clause interruptions between the subject and its verb; move qualifying clauses to the start or end of the sentence, or split them out. Use imperatives for instructions ("Sign all copies"), present tense for rules, and *must* (not *shall*) for obligations.
+- **Lead with the main point (BLUF).** In emails, memos, docs, and pull requests, state the conclusion or request in the first sentence.
+- **Link sentences from known to new, and fix "naked *this*".** Open sentences with familiar context and end with new information. Follow *this* or *these* with a specific noun (*"This timeout..."*, *"These two rules..."*) when a bare pronoun is vague.
+- **One idea per sentence, with subject and verb close.** Split multi-clause run-ons and keep one topic per paragraph. Do not wedge long clauses between subject and verb; move them to the start or end. Use imperatives for instructions ("Sign all copies"), present tense for rules, and *must* (not *shall*) for obligations.
 - **Write positively.** Prefer affirmative form over double negatives (*dishonest* and *forgot* over *not honest* and *did not remember*); state rules directly, not by exception.
 - **Cut expletives and nominalizations.** Drop *There is*, *There are*, and *It is*. Turn noun-verbs (*make a decision*, *give consideration to*, *provide a description of*) into verbs (*decide*, *consider*, *describe*).
-- **Use simple, concrete, consistent words and exact quantities.** Prefer plain words (*use*, *make*, *begin*, *end*, *allow* over *utilize*, *construct*, *commence*, *terminate*, *afford an opportunity*), specific nouns, and one term per concept. Replace vague quantifiers (*various*, *numerous*, *a number of*, *several*, *significant*) with the exact figure from the source, or drop the quantifier when it adds no information.
+- **Use concrete words, exact quantities, and anchored comparisons.** Prefer plain words (*use*, *make*, *begin*, *end*, *allow* over *utilize*, *construct*, *commence*, *terminate*, *afford an opportunity*), specific nouns, and one term per concept. Replace vague quantifiers (*various*, *numerous*, *a number of*, *several*, *significant*) with exact figures or drop them. Anchor comparatives (*faster*, *simpler*) with a baseline and amount (*"cuts build time from 6 minutes to 2"*).
 - **Unpack noun strings and prepositions.** Break up stacked nouns and trim filler nouns (*area*, *aspect*, *factor*) with prepositions (*demand for services* over *demand in the area of services*).
 - **Cut wordy phrases, doublets, and filler.** Use *because*, *to*, *often*, *whether*, *now*, and *if* over *due to the fact that*, *in order to*, *in many cases*, *the question as to whether*, *at this point in time*, and *in the event that*. Drop doublets (*each and every*, *past history*) and intensifiers (*really*, *very*, *basically*).
-- **Order conditions and lists.** Put simple conditions before the rule; put the rule before complex conditions or use a parallel list.
+- **Order conditions, lists, and tables.** Put simple conditions before the rule; put the rule before complex conditions or use a parallel list. Use a table instead of prose when comparing three or more items across shared attributes.
 
 ### Voice
 
@@ -254,7 +254,7 @@ These are the strongest and most frequent tells in current model prose. Act on o
 
 ### 12. Overused AI words
 
-**Watch for:** Actually, additionally, align with, bolstered, consequently, crucial, deep dive, delve, enduring, enhance, furthermore, garner, gate/gated/gating (figurative; keep technical uses), highlight (verb), in addition, interplay, intricate/intricacies, key (adjective), landscape (abstract noun), meticulous/meticulously, moreover, nevertheless, pivotal, quietly, robust (figurative; keep technical uses), showcase, tapestry (abstract noun), testament, underscore (verb), valuable, vibrant
+**Watch for:** Actually, additionally, align with, bandwidth (figurative), bolstered, circle back, consequently, crucial, deep dive, delve, empower, enduring, enhance, facilitate, furthermore, garner, gate/gated/gating (figurative; keep technical uses), highlight (verb), in addition, interplay, intricate/intricacies, key (adjective), landscape (abstract noun), leverage (verb), low-hanging fruit, meticulous/meticulously, moreover, nevertheless, north star, optimize, pain point, pivotal, quietly, robust (figurative; keep technical uses), showcase, spearhead, streamline, synergy, tapestry (abstract noun), testament, underscore (verb), valuable, vibrant
 
 **Problem:** Models use these words far more often than people do, especially in groups, and lean on formal transitions (*furthermore*, *moreover*, *consequently*, *in addition*) where shared subjects or plain conjunctions (*and*, *but*, *so*) connect ideas more naturally. A formal word outside the watch lists is not a tell by itself.
 
@@ -370,7 +370,7 @@ These are the strongest and most frequent tells in current model prose. Act on o
 
 ### 20. Decorative headings
 
-**Problem:** Headings capitalize every main word, and headings or list items carry emojis or arrows (→) as decoration. A horizontal rule sits between every section, or the document opens with a top-level heading that repeats its own title. A heading written for effect ("The decision, on one screen") should name what the section holds ("How the six options compare"). Use sentence case, remove the decoration and the rules, and let the title stand once.
+**Problem:** Headings capitalize every main word, and headings or list items carry emojis or arrows (→) as decoration. A horizontal rule sits between every section, or the document opens with a top-level heading that repeats its own title. A heading written for effect ("The decision, on one screen") or a generic label ("Overview") should name what the section holds ("How the six options compare"). Use sentence case, remove the decoration and the rules, and let the title stand once.
 
 **Before:**
 > ## Strategic Negotiations And Global Partnerships
@@ -429,19 +429,7 @@ These are the strongest and most frequent tells in current model prose. Act on o
 
 ### 24. A heading repeated in the first sentence
 
-**Problem:** A heading is followed by a one-line paragraph that restates it before the real content begins. Remove the repeated sentence.
-
-**Before:**
-> ## Performance
->
-> Speed matters.
->
-> When users hit a slow page, they leave.
-
-**After:**
-> ## Performance
->
-> When users hit a slow page, they leave.
+**Problem:** A heading is followed by a one-line paragraph that restates it (`## Performance` followed by `Speed matters.`). Remove the repeated sentence.
 
 ### 25. Writing about the document instead of its subject
 
