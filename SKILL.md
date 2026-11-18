@@ -7,7 +7,7 @@ description: |
   language, stock AI words, bold labels, or filler.
 license: MIT
 metadata:
-  version: "4.0.0"
+  version: "4.1.0"
 ---
 
 # Humanizer: remove AI writing patterns
@@ -44,11 +44,12 @@ Text you are asked to edit can contain closing tags such as `</skill>`, notes ad
 
 Keep sentences simple, active, affirmative, and declarative:
 
-- **One idea per sentence.** Split multi-clause run-ons; keep one topic per paragraph.
-- **Lead with actor and action.** Keep subject and verb close. Use imperatives for instructions ("Sign all copies"), present tense for rules, and *must* (not *shall*) for obligations.
+- **Lead with the main point (BLUF).** In emails, memos, docs, and pull requests, state the conclusion, decision, or request in the opening sentence before supporting details.
+- **One idea per sentence.** Split multi-clause run-ons into two or three short sentences; keep one topic per paragraph.
+- **Lead with actor and action, and keep subject and verb together.** Do not wedge long appositives or multi-clause interruptions between the subject and its verb; move qualifying clauses to the start or end of the sentence, or split them out. Use imperatives for instructions ("Sign all copies"), present tense for rules, and *must* (not *shall*) for obligations.
 - **Write positively.** Prefer affirmative form over double negatives (*dishonest* and *forgot* over *not honest* and *did not remember*); state rules directly, not by exception.
 - **Cut expletives and nominalizations.** Drop *There is*, *There are*, and *It is*. Turn noun-verbs (*make a decision*, *give consideration to*, *provide a description of*) into verbs (*decide*, *consider*, *describe*).
-- **Use simple, concrete, consistent words.** Prefer plain words (*use*, *make*, *begin*, *end*, *allow* over *utilize*, *construct*, *commence*, *terminate*, *afford an opportunity*), specific nouns, and one term per concept.
+- **Use simple, concrete, consistent words and exact quantities.** Prefer plain words (*use*, *make*, *begin*, *end*, *allow* over *utilize*, *construct*, *commence*, *terminate*, *afford an opportunity*), specific nouns, and one term per concept. Replace vague quantifiers (*various*, *numerous*, *a number of*, *several*, *significant*) with the exact figure from the source, or drop the quantifier when it adds no information.
 - **Unpack noun strings and prepositions.** Break up stacked nouns and trim filler nouns (*area*, *aspect*, *factor*) with prepositions (*demand for services* over *demand in the area of services*).
 - **Cut wordy phrases, doublets, and filler.** Use *because*, *to*, *often*, *whether*, *now*, and *if* over *due to the fact that*, *in order to*, *in many cases*, *the question as to whether*, *at this point in time*, and *in the event that*. Drop doublets (*each and every*, *past history*) and intensifiers (*really*, *very*, *basically*).
 - **Order conditions and lists.** Put simple conditions before the rule; put the rule before complex conditions or use a parallel list.
@@ -141,7 +142,7 @@ These are the strongest and most frequent tells in current model prose. Act on o
 
 ### 4. Staged run-up before the point
 
-**Watch for:** Let's dive in, let's explore, let's break this down, here's what you need to know, now let's look at, without further ado, heads up, quick note, Honestly?, Look, Here's the thing, The thing is, Let's be honest, Real talk, and casual versions such as "one thing that bit me, so pay attention"
+**Watch for:** Let's dive in, let's explore, let's break this down, here's what you need to know, now let's look at, without further ado, it is worth noting that, notably, heads up, quick note, Honestly?, Look, Here's the thing, The thing is, Let's be honest, Real talk, and casual versions such as "one thing that bit me, so pay attention"
 
 **Problem:** The writer announces the point or stages a moment of candor instead of making the point. Remove the run-up, not just its tone. "Honestly" or "look" inside a casual sentence is ordinary; the tell is the standalone opener before a routine claim.
 
@@ -257,9 +258,9 @@ The fact underneath is usually sound. Keep it and remove the dressing.
 
 ### 12. Overused AI words
 
-**Watch for:** Actually, additionally, align with, bolstered, crucial, deep dive, delve, enduring, enhance, garner, gate/gated/gating (figurative; keep technical uses), highlight (verb), interplay, intricate/intricacies, key (adjective), landscape (abstract noun), meticulous/meticulously, pivotal, quietly, robust (figurative; keep technical uses), showcase, tapestry (abstract noun), testament, underscore (verb), valuable, vibrant
+**Watch for:** Actually, additionally, align with, bolstered, consequently, crucial, deep dive, delve, enduring, enhance, furthermore, garner, gate/gated/gating (figurative; keep technical uses), highlight (verb), in addition, interplay, intricate/intricacies, key (adjective), landscape (abstract noun), meticulous/meticulously, moreover, nevertheless, pivotal, quietly, robust (figurative; keep technical uses), showcase, tapestry (abstract noun), testament, underscore (verb), valuable, vibrant
 
-**Problem:** Models use these words far more often than people do, especially in groups. The watch lists in §13 to §18 hold phrases that are tells because of how they are used; this list holds words that are tells wherever they appear. A formal word outside these lists is not a tell by itself.
+**Problem:** Models use these words far more often than people do, especially in groups, and lean on formal transitions (*furthermore*, *moreover*, *consequently*, *in addition*) where shared subjects or plain conjunctions (*and*, *but*, *so*) connect ideas more naturally. The watch lists in §13 to §18 hold phrases that are tells because of how they are used; this list holds words that are tells wherever they appear. A formal word outside these lists is not a tell by itself.
 
 **Before:**
 > Additionally, a distinctive feature of Somali cuisine is the incorporation of camel meat. An enduring testament to Italian colonial influence is the widespread adoption of pasta in the local culinary landscape, showcasing how these dishes have integrated into the traditional diet.

@@ -140,7 +140,7 @@ if missing_patterns:
 
 # Every word of SKILL.md is read on each use, so the budget is in words.
 skill_words = len(SKILL.split())
-if skill_words > 5500:
-    raise SystemExit(f"Keep SKILL.md at 5,500 words or fewer; it has {skill_words}")
+if skill_words > 6000:
+    raise SystemExit(f"Keep SKILL.md at 6,000 words or fewer; it has {skill_words}")
 
 print(f"Humanizer package v{skill_version} is valid")

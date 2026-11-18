@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.1.0
+
+- Added `### Sentence structure and conciseness` guidelines under `## How to work`, drawing on the UNC Chapel Hill Writing Center's "Writing Concisely" handout and the U.S. National Archives "Principles of Clear Writing": lead with the main point (BLUF), keep one idea per sentence, keep subjects and verbs close together in active voice, write positively, cut expletives and nominalizations, prefer simple concrete words and exact quantities over vague quantifiers, unpack stacked noun strings and prepositional chains, cut wordy phrases and doublets, and order conditions and lists clearly.
+- Expanded §4 and §12 to catch mechanical transition phrases (*furthermore*, *moreover*, *consequently*, *in addition*, *nevertheless*, *notably*, *it is worth noting that*) and connect sentences with shared subjects or plain conjunctions.
+- Raised the `SKILL.md` word-count budget in `scripts/validate-package.py` to 6,000 words and synced `README.md` install commands and sources with this fork.
+
 ## 4.0.0
 
 - The skill no longer forbids adding facts. Where the text is generic, it now adds a specific detail it knows to be true. It still keeps every claim the original made and treats a lost or changed claim as an error. This reverses the no-invention rule from 2.9.0. Patterns 14 and 17 follow the same change.

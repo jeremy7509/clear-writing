@@ -36,22 +36,22 @@ Once installed, run it with `/humanizer`.
 ### Claude Code
 
 ```text
-/plugin marketplace add blader/humanizer
+/plugin marketplace add jeremy7509/writing-skill
 /plugin install humanizer@humanizer
 ```
 
-The plugin needs Claude Code 2.1.142 or newer; on older versions, use `npx skills add blader/humanizer --global --agent claude-code`.
+The plugin needs Claude Code 2.1.142 or newer; on older versions, use `npx skills add jeremy7509/writing-skill --global --agent claude-code`.
 
 ### Codex
 
 ```bash
-npx skills add blader/humanizer --global --agent codex
+npx skills add jeremy7509/writing-skill --global --agent codex
 ```
 
 ### pi
 
 ```bash
-pi install git:github.com/blader/humanizer
+pi install git:github.com/jeremy7509/writing-skill
 ```
 
 Add `-l` to install it only in the current project. `pi update --extensions` pulls new versions.
@@ -63,7 +63,7 @@ Download this repository as a ZIP (**Code → Download ZIP**) and upload it as a
 ### Other agents
 
 ```bash
-npx skills add blader/humanizer --global --agent '*'
+npx skills add jeremy7509/writing-skill --global --agent '*'
 ```
 
 This installs Humanizer for every agent the Skills CLI supports, including Gemini CLI, GitHub Copilot, and Windsurf. Leave off `--global` in any command above to install it only in the current project. For an agent the Skills CLI does not know, copy `SKILL.md` into its skill folder.
@@ -115,7 +115,7 @@ A language model writes whatever is most likely to come next, so by default it m
 > "LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases."
 > Wikipedia, ["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)
 
-Humanizer marks every tell it finds, strongest first. It drafts a rewrite and may merge, split, or reorder sentences and paragraphs, then checks the draft against the patterns and the original claims and writes the final version. Where the text is generic, it adds a specific detail it knows to be true, and it keeps every claim the original made.
+Humanizer marks every tell it finds, strongest first. It drafts a rewrite in concise, active prose with simple sentence structures, and may merge, split, or reorder sentences and paragraphs, then checks the draft against the patterns and the original claims and writes the final version. Where the text is generic, it adds a specific detail it knows to be true, and it keeps every claim the original made.
 
 When you paste text, Humanizer shows its work: the first rewrite, a short critique of anything that still sounds artificial, and the final version. Point it at a file and it changes only the prose, leaving code, data, frontmatter, and link targets alone. Personal writing keeps the writer's opinions and quirks. Technical and reference prose stays neutral and plain.
 
@@ -209,6 +209,7 @@ Humanizer numbers the patterns from strongest and most common to weakest. It edi
 
 - [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) is the source for the pattern list.
 - [WikiProject AI Cleanup](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup) maintains the page.
+- [UNC Chapel Hill Writing Center: Writing Concisely](https://writingcenter.unc.edu/tips-and-tools/conciseness-handout/) and [U.S. National Archives: Principles of Clear Writing](https://www.archives.gov/federal-register/write/legal-docs/clear-writing.html) inform the conciseness and sentence-structure guidelines.
 
 ## Version history
 

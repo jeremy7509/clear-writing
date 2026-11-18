@@ -1,13 +1,13 @@
 {
   "name": "humanizer",
   "description": "Rewrite AI-sounding text so it reads like the writer without changing what it says.",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "author": {
     "name": "blader",
     "url": "https://github.com/blader"
   },
-  "homepage": "https://github.com/blader/humanizer",
-  "repository": "https://github.com/blader/humanizer",
+  "homepage": "https://github.com/jeremy7509/writing-skill",
+  "repository": "https://github.com/jeremy7509/writing-skill",
   "license": "MIT",
   "keywords": ["writing", "editing", "humanize", "prose", "style"],
   "skills": ["./"]
