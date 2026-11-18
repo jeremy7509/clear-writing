@@ -1,14 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
-  "name": "humanizer",
+  "name": "clear-writing",
   "owner": {
     "name": "jeremy7509",
     "url": "https://github.com/jeremy7509"
   },
-  "description": "Install Humanizer as a Claude plugin.",
+  "description": "Install Clear Writing as a Claude plugin.",
   "plugins": [
     {
-      "name": "humanizer",
+      "name": "clear-writing",
       "source": "./",
       "description": "Rewrite AI-sounding text so it reads like the writer without changing what it says.",
       "license": "MIT",

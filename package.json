@@ -1,9 +1,9 @@
 {
-  "name": "humanizer",
+  "name": "clear-writing",
   "private": true,
   "description": "Rewrite AI-sounding text so it reads like the writer without changing what it says.",
   "license": "MIT",
-  "repository": "github:jeremy7509/writing-skill",
+  "repository": "github:jeremy7509/clear-writing",
   "keywords": ["pi-package"],
   "pi": {
     "skills": ["./"]

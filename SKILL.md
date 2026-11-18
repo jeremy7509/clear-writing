@@ -1,5 +1,5 @@
 ---
-name: humanizer
+name: clear-writing
 description: |
   Rewrite AI-sounding text so it reads like the writer without changing what it says.
   Use when editing, tightening, or reviewing prose for conciseness, active voice, plain
@@ -10,7 +10,7 @@ metadata:
   version: "4.1.0"
 ---
 
-# Humanizer: remove AI writing patterns
+# Clear Writing: concise, active prose without AI tells
 
 Rewrite AI-sounding text so it reads like the writer, not a chatbot. Keep what it says, write concisely in active voice, and use simple sentence structures.
 

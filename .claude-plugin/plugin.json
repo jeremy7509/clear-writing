@@ -1,13 +1,13 @@
 {
-  "name": "humanizer",
+  "name": "clear-writing",
   "description": "Rewrite AI-sounding text so it reads like the writer without changing what it says.",
   "version": "4.1.0",
   "author": {
     "name": "jeremy7509",
     "url": "https://github.com/jeremy7509"
   },
-  "homepage": "https://github.com/jeremy7509/writing-skill",
-  "repository": "https://github.com/jeremy7509/writing-skill",
+  "homepage": "https://github.com/jeremy7509/clear-writing",
+  "repository": "https://github.com/jeremy7509/clear-writing",
   "license": "MIT",
   "keywords": ["writing", "editing", "humanize", "prose", "style"],
   "skills": ["./"]

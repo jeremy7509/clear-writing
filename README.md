@@ -1,8 +1,8 @@
-# Humanizer
+# Clear Writing
 
-[![GitHub stars](https://img.shields.io/github/stars/jeremy7509/writing-skill?style=flat)](https://github.com/jeremy7509/writing-skill/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/jeremy7509/clear-writing?style=flat)](https://github.com/jeremy7509/clear-writing/stargazers)
 
-Humanizer makes AI-written text sound like a person wrote it, without changing what it says. It is built on Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), the guide Wikipedia editors use to catch AI-generated text, and it works in Claude Code, Codex, and any other agent that supports skills.
+Clear Writing makes AI-written text concise, active, and sound like a person wrote it, without changing what it says. It builds on Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), the [UNC Chapel Hill Writing Center's Writing Concisely handout](https://writingcenter.unc.edu/tips-and-tools/conciseness-handout/), and the [U.S. National Archives Principles of Clear Writing](https://www.archives.gov/federal-register/write/legal-docs/clear-writing.html), and it works in Claude Code, Codex, and any other agent that supports skills.
 
 **Before:**
 > I'm thrilled to announce that shared drafts are finally here! 🚀 For months, our own team was drowning in files named final_v7.docx — and we knew there had to be a better way. Now two people can edit the same doc at once, with every change appearing live for both of them. It's not just a feature; it's a whole new way to collaborate. Comments stay anchored to the exact sentence they reference, even as the text around them evolves. And the best part? It's available today on every plan, completely free. Let that sink in.
@@ -10,13 +10,13 @@ Humanizer makes AI-written text sound like a person wrote it, without changing w
 **After:**
 > Shared drafts are out today. For months our own team passed around files named final_v7.docx, and we got sick of it. Now two people can edit the same doc at once and see each other's changes as they type. Comments stay attached to the sentence they're about, even when the text around it changes. It's free on every plan.
 
-In a blind test, judges preferred Humanizer's rewrite over the original AI text 16 times out of 16 ([#229](https://github.com/blader/humanizer/issues/229)).
+In a blind test, judges preferred the rewrite over the original AI text 16 times out of 16 ([#229](https://github.com/blader/humanizer/issues/229)).
 
-Humanizer edits for human readers. It does not try to get past AI detectors, and detectors still flag most of its output.
+Clear Writing edits for human readers. It does not try to get past AI detectors, and detectors still flag most of its output.
 
 ## The five strongest tells
 
-These are the most common signs of AI writing, and Humanizer rewrites any of them on sight:
+These are the most common signs of AI writing, and Clear Writing rewrites any of them on sight:
 
 1. **Not X but Y:** "It's not just a feature, it's a shift."
 2. **One-line closers:** "Let that sink in."
@@ -24,31 +24,31 @@ These are the most common signs of AI writing, and Humanizer rewrites any of the
 4. **A staged run-up:** "Here's the thing." "Honestly?"
 5. **Arguing with no one:** "I'm not saying X, but..."
 
-Humanizer checks for [26 patterns](#the-26-patterns) in all.
+Clear Writing checks for [26 patterns](#the-26-patterns) in all.
 
 ## Installation
 
-Once installed, run it with `/humanizer`.
+Once installed, run it with `/clear-writing`.
 
 ### Claude Code
 
 ```text
-/plugin marketplace add jeremy7509/writing-skill
-/plugin install humanizer@humanizer
+/plugin marketplace add jeremy7509/clear-writing
+/plugin install clear-writing@clear-writing
 ```
 
-The plugin needs Claude Code 2.1.142 or newer; on older versions, use `npx skills add jeremy7509/writing-skill --global --agent claude-code`.
+The plugin needs Claude Code 2.1.142 or newer; on older versions, use `npx skills add jeremy7509/clear-writing --global --agent claude-code`.
 
 ### Codex
 
 ```bash
-npx skills add jeremy7509/writing-skill --global --agent codex
+npx skills add jeremy7509/clear-writing --global --agent codex
 ```
 
 ### pi
 
 ```bash
-pi install git:github.com/jeremy7509/writing-skill
+pi install git:github.com/jeremy7509/clear-writing
 ```
 
 Add `-l` to install it only in the current project. `pi update --extensions` pulls new versions.
@@ -60,17 +60,17 @@ Download this repository as a ZIP (**Code → Download ZIP**) and upload it as a
 ### Other agents
 
 ```bash
-npx skills add jeremy7509/writing-skill --global --agent '*'
+npx skills add jeremy7509/clear-writing --global --agent '*'
 ```
 
-This installs Humanizer for every agent the Skills CLI supports, including Gemini CLI, GitHub Copilot, and Windsurf. Leave off `--global` in any command above to install it only in the current project. For an agent the Skills CLI does not know, copy `SKILL.md` into its skill folder.
+This installs Clear Writing for every agent the Skills CLI supports, including Gemini CLI, GitHub Copilot, and Windsurf. Leave off `--global` in any command above to install it only in the current project. For an agent the Skills CLI does not know, copy `SKILL.md` into its skill folder.
 
 ## Usage
 
 Call the skill directly:
 
 ```
-/humanizer
+/clear-writing
 
 [paste your text here]
 ```
@@ -78,47 +78,47 @@ Call the skill directly:
 Or ask in plain language:
 
 ```
-Please humanize this text: [your text]
+Please rewrite this text using clear-writing: [your text]
 ```
 
-To rewrite a file, give Humanizer its path:
+To rewrite a file, give Clear Writing its path:
 
 ```
-Humanize the prose in docs/launch-post.md
+Rewrite the prose in docs/launch-post.md using clear-writing
 ```
 
-Humanizer reads the current file in full before editing, including files it wrote earlier in the session. Its summary states how many sections it reviewed and identifies any it could not cover.
+Clear Writing reads the current file in full before editing, including files it wrote earlier in the session. Its summary states how many sections it reviewed and identifies any it could not cover.
 
 ### Match your voice
 
 If you want the rewrite to sound more like you, include a sample:
 
 ```
-/humanizer
+/clear-writing
 
 Here's a sample of my writing for voice matching:
 [paste 2-3 paragraphs of your own writing]
 
-Now humanize this text:
-[paste AI text to humanize]
+Now rewrite this text:
+[paste AI text to rewrite]
 ```
 
-Humanizer follows the sample's rhythm, word choice, punctuation, and deliberate quirks, including dashes if you use them.
+Clear Writing follows the sample's rhythm, word choice, punctuation, and deliberate quirks, including dashes if you use them.
 
 ## How it works
 
-A language model writes whatever is most likely to come next, so by default it makes the choice that fits the widest range of readers and subjects. A person chooses for one reader and one subject. Every tell Humanizer looks for is a form of that default choice: a sentence that signals importance instead of adding a fact, rhythm or formatting applied by rule, an ordinary fact dressed as a pivotal one, text left over from the chat, or a reply that re-explains what the reader already knows.
+A language model writes whatever is most likely to come next, so by default it makes the choice that fits the widest range of readers and subjects. A person chooses for one reader and one subject. Every tell Clear Writing looks for is a form of that default choice: a sentence that signals importance instead of adding a fact, rhythm or formatting applied by rule, an ordinary fact dressed as a pivotal one, text left over from the chat, or a reply that re-explains what the reader already knows.
 
 > "LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases."
 > Wikipedia, ["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)
 
-Humanizer marks every tell it finds, strongest first. It drafts a rewrite in concise, active prose with simple sentence structures, and may merge, split, or reorder sentences and paragraphs, then checks the draft against the patterns and the original claims and writes the final version. Where the text is generic, it adds a specific detail it knows to be true, and it keeps every claim the original made.
+Clear Writing marks every tell it finds, strongest first. It drafts a rewrite in concise, active prose with simple sentence structures, and may merge, split, or reorder sentences and paragraphs, then checks the draft against the patterns and the original claims and writes the final version. Where the text is generic, it adds a specific detail it knows to be true, and it keeps every claim the original made.
 
-When you paste text, Humanizer returns the final rewrite by default, and can show its first draft and pattern critique when asked. Point it at a file and it changes only the prose, leaving code, data, frontmatter, and link targets alone. Personal writing keeps the writer's opinions and quirks. Technical and reference prose stays neutral and plain.
+When you paste text, Clear Writing returns the final rewrite by default, and can show its first draft and pattern critique when asked. Point it at a file and it changes only the prose, leaving code, data, frontmatter, and link targets alone. Personal writing keeps the writer's opinions and quirks. Technical and reference prose stays neutral and plain.
 
 ## The 26 patterns
 
-Humanizer numbers the patterns from strongest and most common to weakest. It edits any of the first five the first time it sees one, and acts on a pattern marked *weak alone* only when several tells share a passage, because a careful writer may use any one of them on purpose.
+Clear Writing numbers the patterns from strongest and most common to weakest. It edits any of the first five the first time it sees one, and acts on a pattern marked *weak alone* only when several tells share a passage, because a careful writer may use any one of them on purpose.
 
 ### A. Staging instead of stating
 
@@ -216,4 +216,4 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 MIT
 
-If Humanizer helps you, a star helps other people find it.
+If Clear Writing helps you, a star helps other people find it.
