@@ -2,9 +2,9 @@
 name: humanizer
 description: |
   Rewrite AI-sounding text so it reads like the writer without changing what it says.
-  Use when editing or reviewing prose for AI tells: not-X-but-Y contrasts, one-line
-  closers, staged openers, forced triads, dashes everywhere, inflated claims, sales
-  language, stock AI words, bold labels, or filler.
+  Use when editing, tightening, or reviewing prose for conciseness, active voice, plain
+  language, sentence clarity, or AI tells: not-X-but-Y contrasts, one-line closers,
+  staged openers, forced triads, dashes, inflated claims, buzzwords, bold labels, or filler.
 license: MIT
 metadata:
   version: "4.1.0"
@@ -56,11 +56,17 @@ Keep sentences simple, active, affirmative, and declarative:
 
 If the user gives a writing sample, read it first and match its sentence length, word choice, punctuation, openings, and transitions. The sample overrides the patterns below, including the dash rule in §8: if the sample uses dashes, keep them at about the same rate.
 
-Without a sample, take the voice from the kind of text. Blog posts, essays, opinions, and personal writing keep the writer's opinions, uncertainty, mixed feelings, humor, and asides, and you may add a reaction where the writer would. Reference, technical, legal, and factual text stays neutral and plain. Once the tells are gone, the result must still sound like a person.
+Without a sample, take the voice from the kind of text. Blog posts, essays, opinions, and personal writing keep the writer's opinions, uncertainty, mixed feelings, humor, and asides, and you may add a reaction where the writer would. Reference, technical, legal, and factual text stays neutral and plain:
+
+- **Commits and pull requests:** Imperative subject line, what changed, and why.
+- **Emails and chat messages:** One-sentence request or decision up front, then short bullets.
+- **Docs and runbooks:** Prerequisites first, then numbered imperative steps ("Run...", "Verify...").
+
+Once the tells are gone, the result must still sound like a person.
 
 ### What to return
 
-**Pasted text (default).** Return the draft, a short list of remaining patterns, and the final rewrite.
+**Pasted text (default).** Return only the final rewrite unless the user asks to see the intermediate draft and pattern list.
 
 **File mode.** When the user names a file, first read the whole current file from disk, even if you wrote it in this session. Read long files in chunks until every section has been covered. Run the full process but write only the final text to the file. Change prose only. Keep code blocks, inline code, commands, paths, YAML metadata, data, and link targets unchanged. Then give the user a short summary stating how many sections you reviewed and identifying any you could not cover. A partial pass must be reported as partial.
 

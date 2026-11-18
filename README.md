@@ -1,9 +1,6 @@
-# Humanizer 
+# Humanizer
 
-sponsored by [cfo.ai](https://cfo.ai)
-
-[![GitHub stars](https://img.shields.io/github/stars/blader/humanizer?style=flat)](https://github.com/blader/humanizer/stargazers) [![skills.sh installs](https://skills.sh/b/blader/humanizer)](https://skills.sh/blader/humanizer) 
-
+[![GitHub stars](https://img.shields.io/github/stars/jeremy7509/writing-skill?style=flat)](https://github.com/jeremy7509/writing-skill/stargazers)
 
 Humanizer makes AI-written text sound like a person wrote it, without changing what it says. It is built on Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), the guide Wikipedia editors use to catch AI-generated text, and it works in Claude Code, Codex, and any other agent that supports skills.
 
@@ -117,7 +114,7 @@ A language model writes whatever is most likely to come next, so by default it m
 
 Humanizer marks every tell it finds, strongest first. It drafts a rewrite in concise, active prose with simple sentence structures, and may merge, split, or reorder sentences and paragraphs, then checks the draft against the patterns and the original claims and writes the final version. Where the text is generic, it adds a specific detail it knows to be true, and it keeps every claim the original made.
 
-When you paste text, Humanizer shows its work: the first rewrite, a short critique of anything that still sounds artificial, and the final version. Point it at a file and it changes only the prose, leaving code, data, frontmatter, and link targets alone. Personal writing keeps the writer's opinions and quirks. Technical and reference prose stays neutral and plain.
+When you paste text, Humanizer returns the final rewrite by default, and can show its first draft and pattern critique when asked. Point it at a file and it changes only the prose, leaving code, data, frontmatter, and link targets alone. Personal writing keeps the writer's opinions and quirks. Technical and reference prose stays neutral and plain.
 
 ## The 26 patterns
 
@@ -130,7 +127,7 @@ Humanizer numbers the patterns from strongest and most common to weakest. It edi
 | 1 | **Not X but Y** | "It's not just X, it's Y", "This doesn't mean X. It means Y." | State the point directly |
 | 2 | **One-line closers and dramatic fragments** | "That is the real win." after every section; "This shows the importance of..." after an example; "No prior. No nostalgia." | Cut the closer that repeats or explains the example; merge fragments into a specific claim |
 | 3 | **Sayings that sound deep** | "At its core, what matters is...", "Symmetry is the language of trust" | Replace the saying with the specific claim |
-| 4 | **Staged run-up before the point** | "Let's dive in", "Honestly? It depends..." | Remove the run-up and state the point |
+| 4 | **Staged run-up before the point** | "Let's dive in", "It is worth noting that...", "Honestly? It depends..." | Remove the run-up and state the point |
 | 5 | **Arguing with no one** | "This isn't mainly about...", "A tempting approach would be..." | Remove the unraised objection or fake option; keep any real claim |
 
 ### B. Rhythm by rule
@@ -148,7 +145,7 @@ Humanizer numbers the patterns from strongest and most common to weakest. It edi
 
 | # | Pattern | Before | After |
 |---|---------|--------|-------|
-| 12 | **Overused AI words** | "delve... testament... landscape... showcasing" | Use plain words |
+| 12 | **Overused AI words** | "delve... furthermore... leverage... landscape... showcasing" | Use plain words and simple conjunctions |
 | 13 | **Inflated significance** | "marking a pivotal moment", "Despite challenges... continues to thrive", "The future looks bright" | Keep the fact and drop the significance; end on the last concrete fact |
 | 14 | **Vague connection or association** | "associated with the leadership of", "in connection with" | Name the relationship if you know it |
 | 15 | **Shallow -ing phrases** | "symbolizing... reflecting... showcasing..." | Keep only what the source supports |
@@ -161,7 +158,7 @@ Humanizer numbers the patterns from strongest and most common to weakest. It edi
 | # | Pattern | Before | After |
 |---|---------|--------|-------|
 | 19 | **Bold as decoration** | "**OKRs**, **KPIs**"; "**Performance:** Performance improved" | Remove the bold; turn a labeled list into prose |
-| 20 | **Decorative headings** | "Strategic Negotiations And Partnerships", "🚀 Launch Phase:", "The decision, on one screen" | Sentence case; remove emojis and arrows; name what the section holds |
+| 20 | **Decorative headings** | "Strategic Negotiations And Partnerships", "🚀 Launch Phase:", "Overview" | Sentence case; remove emojis and arrows; name what the section holds |
 | 21 | **Curly quotation marks** (*weak alone*) | `said “the project”` | `said "the project"` |
 
 ### E. Leftovers from the chat and the draft

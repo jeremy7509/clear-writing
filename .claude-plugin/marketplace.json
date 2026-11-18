@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "humanizer",
   "owner": {
-    "name": "blader",
-    "url": "https://github.com/blader"
+    "name": "jeremy7509",
+    "url": "https://github.com/jeremy7509"
   },
   "description": "Install Humanizer as a Claude plugin.",
   "plugins": [
